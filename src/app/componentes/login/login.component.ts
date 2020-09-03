@@ -17,6 +17,8 @@ export class LoginComponent implements OnInit {
   }
 
   public Loguearse():void{
+    this.user = (<HTMLInputElement>document.getElementById("user")).value
+    this.pw = (<HTMLInputElement>document.getElementById("pw")).value
     if (this.user == "admin@mail.com" && this.pw == "1234")
       this.route.navigate(['bienvenida']);
     else

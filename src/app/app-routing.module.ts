@@ -5,8 +5,8 @@ import { LoginComponent } from './componentes/login/login.component';
 import { ErrorComponent } from './componentes/error/error.component';
 
 const routes: Routes = [
-  {path: '', component: BienvenidaComponent},
-  {path: 'login', component: LoginComponent},
+  {path: 'bienvenida', component: BienvenidaComponent},
+  {path: '', component: LoginComponent},
   {path: '**', component: ErrorComponent},
 ]
 
