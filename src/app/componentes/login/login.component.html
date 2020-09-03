@@ -1,1 +1,8 @@
-<p>login works!</p>
+<label>Ingrese usuario: </label>
+<input type="text"  id="user" [(ngModel)]="user">
+<br>
+<label>Ingrese contraseña: </label>
+<input type="password"  id="pw" [(ngModel)]="pw">
+<br>
+<button (click)="Loguearse()">Loguearse</button>
+<button (click)="Limpiar()">Limpiar</button>
