@@ -1,0 +1,30 @@
+<table class="table table-striped" class="mat-elevation-z8" style="width: 100%; padding: 10px;">
+    <thead>
+        <tr>
+            <th style="text-align: left;">Id</th>
+            <th style="text-align: left;">Sexo</th>
+            <th style="text-align: left;">Email</th>
+            <th style="text-align: left;">Nombre</th>
+            <th style="text-align: left;">Apellido</th>
+            <th style="text-align: left;">FechaNac</th>
+            <th style="text-align: left;">FotoPerfil</th>
+            <th style="text-align: left;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of listadoPersonas">
+            <td style="width: auto;">{{p.id}}</td>
+            <td style="width: auto;">{{p.Sexo}}</td>
+            <td style="width: auto;">{{p.email}}</td>
+            <td style="width: auto;">{{p.Nombre}}</td>
+            <td style="width: auto;">{{p.Apellido}}</td>
+            <td style="width: auto;">{{p.FechaNac}}</td>
+            <td style="width: auto;">
+                <img [src]="p.FotoPerfil" alt="" style="width: 100px; height: 100px;">
+            </td>
+            <td style="width: auto;">
+                <button (click)="VerPersona(p)">Ver Detalles</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

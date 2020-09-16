@@ -1,0 +1,15 @@
+.div-general-administrador {
+    display: flex;
+}
+
+.div-listado {
+    width: 60%;
+    padding: 10px;
+}
+
+.div-detalle {
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 40%;
+    padding: 10px;
+}
