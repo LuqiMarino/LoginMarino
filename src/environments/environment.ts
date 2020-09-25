@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  urlApiPersonas: 'https://api.mocki.io/v1/570c5e5c',
+  urlApiPaisesEuropa: 'https://restcountries.eu/rest/v2/region/europe',
+  urlApiPaisesAsia: 'https://restcountries.eu/rest/v2/region/asia',
+  urlApiPaisesAfrica: 'https://restcountries.eu/rest/v2/region/africa'
+
 };
 
 /*

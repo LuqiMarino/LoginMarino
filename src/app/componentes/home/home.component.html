@@ -1,5 +1,6 @@
-<button (click)="Acceder(1)">Log In</button>
-<button (click)="Acceder(2)">Listado Personas</button>
+<button (click)="Acceder(1)">Clase 1: Log In</button><br>
+<button (click)="Acceder(2)">Clase 3: Listado Personas con Input/Output</button><br>
+<button (click)="Acceder(3)">Clase 5: Paises con directivas</button><br>
 
 <div *ngIf="menu == 1">
     <app-login></app-login>
@@ -15,5 +16,9 @@
         </div>
     </div>
     
+</div>
+
+<div *ngIf="menu == 3">
+    <app-paises-home></app-paises-home> 
 </div>
 

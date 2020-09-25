@@ -20,10 +20,10 @@ export class HomeComponent implements OnInit {
     //cargo lista personas
     this.apiServicio.obtenerPersonas().subscribe((personas: any) => {
       this.listadoPersonas = personas;
-      console.log(personas);
     }, error => {
-      console.log('Error');
+      console.log('Error: ' + error);
     });
+
   }
 
   public Acceder(opcion:number){
@@ -31,7 +31,6 @@ export class HomeComponent implements OnInit {
   }
 
   SeleccionarPersona(persona){
-    console.log("ENTRO A SELECCIONAR PERSONA");
     this.personaSeleccionada = persona;
   }
 

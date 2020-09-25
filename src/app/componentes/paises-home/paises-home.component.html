@@ -1,0 +1,20 @@
+<div class="div-general-administrador">
+    <app-paises-regiones 
+        (emitirDevolverRegion)="DevolverRegion($event)">
+    </app-paises-regiones>
+
+    <div class="div-listado">
+        <app-paises-bandera 
+            [region]="regionSeleccionada"
+            [listadoPaisesSegunRegion]="listadoSegunRegion"
+            (emitirVerPais)="SeleccionarPais($event)">
+         </app-paises-bandera>
+    </div>
+    
+    <div class="div-detalle">
+        <app-paises-detalle
+            [pais]="paisSeleccionado">
+        </app-paises-detalle>
+    </div>
+    
+</div>

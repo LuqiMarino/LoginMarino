@@ -1,0 +1,18 @@
+<div [ngSwitch]="regionSeleccionada">
+    <div *ngSwitchCase="'Europa'">
+        <h1>Region: Europa</h1>
+        <label>{{url}}</label>
+    </div>
+    <div *ngSwitchCase="'Asia'">
+        <h1>Region: Asia</h1>
+        <label>{{url}}</label>
+    </div>
+    <div *ngSwitchCase="'Africa'">
+        <h1>Region: Africa</h1>
+        <label>{{url}}</label>
+    </div>
+</div><br>
+
+<button (click)="SeleccionarRegion(1)">Europa</button>
+<button (click)="SeleccionarRegion(2)">Asia</button>
+<button (click)="SeleccionarRegion(3)">Africa</button>

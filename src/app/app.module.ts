@@ -9,7 +9,11 @@ import { FormsModule } from '@angular/forms';
 import { ListadoEntidadComponent } from './componentes/listado-entidad/listado-entidad.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './componentes/home/home.component';
-import { DetalleEntidadComponent } from './componentes/detalle-entidad/detalle-entidad.component'
+import { DetalleEntidadComponent } from './componentes/detalle-entidad/detalle-entidad.component';
+import { PaisesHomeComponent } from './componentes/paises-home/paises-home.component';
+import { PaisesRegionesComponent } from './componentes/paises-regiones/paises-regiones.component';
+import { PaisesBanderaComponent } from './componentes/paises-bandera/paises-bandera.component';
+import { PaisesDetalleComponent } from './componentes/paises-detalle/paises-detalle.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { DetalleEntidadComponent } from './componentes/detalle-entidad/detalle-e
     BienvenidaComponent,
     ListadoEntidadComponent,
     HomeComponent,
-    DetalleEntidadComponent
+    DetalleEntidadComponent,
+    PaisesHomeComponent,
+    PaisesRegionesComponent,
+    PaisesBanderaComponent,
+    PaisesDetalleComponent
   ],
   imports: [
     BrowserModule,

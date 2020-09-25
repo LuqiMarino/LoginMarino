@@ -1,5 +1,4 @@
 import { Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
-import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-listado-entidad',
@@ -10,7 +9,7 @@ export class ListadoEntidadComponent implements OnInit {
 
   @Input() listadoPersonas;
   @Output() emitirVerPersona:EventEmitter<any> = new EventEmitter();
-  constructor(private route: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
   }

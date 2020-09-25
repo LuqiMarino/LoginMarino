@@ -1,0 +1,9 @@
+
+<table class="table table-striped" class="mat-elevation-z8" style="width: 100%; padding: 10px;">
+    <tbody>
+        <tr *ngFor="let p of listadoPaisesSegunRegion" style="width: 100px;">
+            <img [src]="p.flag" alt="" style="width: 100px; height: 100px;">
+            <button (click)="VerPais(p)">Ver Detalles</button>
+        </tr>
+    </tbody>
+</table>
