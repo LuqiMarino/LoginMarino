@@ -10,19 +10,19 @@ export class ApiServiceService {
   constructor(private http: HttpClient) { }
 
   public obtenerPersonas(){
-    return this.http.get(environment.urlApiPersonas);
+    return this.http.get("https://api.mocki.io/v1/570c5e5c");
   }
 
   public obtenerPaisesEuropa(){
-    return this.http.get(environment.urlApiPaisesEuropa);
+    return this.http.get("https://restcountries.eu/rest/v2/region/europe");
   }
 
   public obtenerPaisesAsia(){
-    return this.http.get(environment.urlApiPaisesAsia);
+    return this.http.get("https://restcountries.eu/rest/v2/region/asia");
   }
 
   public obtenerPaisesAfrica(){
-    return this.http.get(environment.urlApiPaisesAfrica);
+    return this.http.get("https://restcountries.eu/rest/v2/region/africa");
   }
 
 }
